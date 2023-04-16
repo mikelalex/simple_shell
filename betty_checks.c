@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point of the program
  *
@@ -6,14 +7,18 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(int argc, char **argv)
+
 {
-    if (argc != 2) {
-        printf("Usage: %s <argument>\n", argv[0]);
-        return 1;
-    }
+	if(argc != 2)
 
-    printf("You entered: %s\n", argv[1]);
-    return 0;
+	{
+		printf("Usage: %s <argument>\n", argv[0]);
+		return (1);
+	}
+
+	printf("You entered: %s\n", argv[1]);
+	return (0);
+
 }
-
