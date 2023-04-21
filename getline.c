@@ -7,7 +7,7 @@
 *You will need to use static variables
 *You are not allowed to use getline
 *
-*
+*/
 
 char* my_getline() {
     static char buffer[BUFFER_SIZE];
