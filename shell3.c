@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <shell.h>
 
-#define MAX_COMMAND_LENGTH 1024
-#define PROMPT "> "
+/*
+*Simple shell 0.3 +
+*Implement the exit built-in, that exits the shell
+*Usage: exit
+*You don’t have to handle any argument to the built-in exit
+*
+*/
 
 int main(void)
 {
