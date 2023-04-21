@@ -7,8 +7,6 @@
 *
 */
 
-#define MAX_COMMAND_LENGTH 1024
-#define PROMPT "> "
 
 int main(void)
 {
