@@ -1,8 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <shell.h>
+
+/*
+*
+*Handle the PATH
+*fork must not be called if the command doesn’t exist
+*
+*/
 
 #define MAX_COMMAND_LENGTH 1024
 #define PROMPT "> "
