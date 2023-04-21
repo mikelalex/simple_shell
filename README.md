@@ -21,8 +21,15 @@ How does the shell use the PATH to find the programs
 How to execute another program with the execve system call
 How to suspend the execution of a process until one of its children terminates
 What is EOF / “end-of-file”?
+
+# Copyright - Plagiarism
+You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+You are not allowed to publish any content of this project.
+Any form of plagiarism is strictly forbidden and will result in removal from the program.
+
 # Requirements
-#  General
+## General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All your files should end with a new line
@@ -32,21 +39,26 @@ Your shell should not have any memory leaks
 No more than 5 functions per file
 All your header files should be include guarded
 Use system calls only when you need to (why?)
+Write a README with the description of your project
+You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
+
 # GitHub
 *There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *
 
-More Info
-Output
-Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
-The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
-Example of error with sh:
+# More Info
+## Output
+* Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
+* The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
+
+## Example of error with sh:
 
 $ echo "qwerty" | /bin/sh
 /bin/sh: 1: qwerty: not found
 $ echo "qwerty" | /bin/../bin/sh
 /bin/../bin/sh: 1: qwerty: not found
 $
-Same error with your program hsh:
+
+## Same error with your program hsh:
 
 $ echo "qwerty" | ./hsh
 ./hsh: 1: qwerty: not found
@@ -90,29 +102,4 @@ $
 # Compilation
 ## Your shell will be compiled this way:
 
-`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
-
-
-# files
-- README.md - description about the project repo
-- man_1_simple_shell - is the man page for the shell we are going to write.
-- AUTHORS - file at the  root of your repository, listing all individuals having contributed content to the repository. 
-- main.h - is the header file which contains the standared header file and prototype of o function used in the program.
-- main.c - initialize the program with infinite loop by call the prompt function
-- prompt.c - it use getline system call to read the input from the user and run infinite loop with fork to keep prompt going.
-- special_character - It identiies if the special inputs such as if the frist input is slash,the user typed exit or env...
-- string.c -it handles the strings(string length, write string,find string in directory,concatane strings....)
-- cmd.c - it finds the command the user entered.
-- execute.c - execute the command.
-
-## How to add Author file
-`Bash script for generating the list of authors in git repo`
-```
-#!/bin/sh
-
-git shortlog -se \
-  | perl -spe 's/^\s+\d+\s+//' \
-  | sed -e '/^CommitSyncScript.*$/d' \
-  > AUTHORS
-  ```
-
+`gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
