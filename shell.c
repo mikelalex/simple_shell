@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <shell.h>
 
-#define MAX_COMMAND_LENGTH 1024
-#define PROMPT "> "
+/*
+*Usage: simple_shell
+*
+*
+*Display a prompt and wait for the user to type a command
+*/
 
 int main(void)
 {
