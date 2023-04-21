@@ -81,10 +81,5 @@ char *get_new_dir(int argc, char *argv[]);
 #define MAX_NUM_ALIASES 1024
 #define MAX_INPUT_LENGTH 1024
 
-#define MAX_NAME_LENGTH 50
-#define MAX_VALUE_LENGTH 50
-#define MAX_NUM_ALIASES 100
-#define MAX_INPUT_LENGTH 100
-
 
 #endif
