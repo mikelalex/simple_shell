@@ -1,0 +1,6 @@
+alias pd="pwd"
+alias ls="ls -t"
+alias m="mv"
+alias n="nano"
+alias home="echo $HOME"
+alias grep="grep -Ri"
