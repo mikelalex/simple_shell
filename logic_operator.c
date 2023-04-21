@@ -1,14 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
+#include <shell.h>
 
-#define MAX_PATH_LENGTH 1024
-
-void update_pwd_env_var();
-char *get_home_dir();
-char *get_prev_dir();
-char *get_new_dir(int argc, char *argv[]);
+/*
+*
+*Handle the && and || shell logical operators
+*
+*/
 
 int main(int argc, char *argv[], char __attribute__((unused)) *envp[]) {
     int i = 1;
