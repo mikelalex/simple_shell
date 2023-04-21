@@ -1,12 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define MAX_ARGS 3
-#define MAX_ENV_VAR_LENGTH 256
-#define MAX_ENV_VALUE_LENGTH 256
-
-extern char **environ;
+#include <shell.h>
+/*
+*
+*setenv and unsetenv builtin commands
+*
+*/
 
 void set_env_variable(char *var_name, char *var_value) {
     int overwrite = 1;
