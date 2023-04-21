@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <shell.h>
 
-#define MAX_ALIAS_LENGTH 1024
-#define MAX_NAME_LENGTH 1024
-#define MAX_VALUE_LENGTH 1024
-#define MAX_NUM_ALIASES 1024
+/*
+*
+*
+*alias builtin command
+*
+*/
+
 
 typedef struct {
     char name[MAX_NAME_LENGTH];
