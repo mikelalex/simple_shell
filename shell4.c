@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <shell.h>
 
-#define MAX_COMMAND_LENGTH 1024
-#define PROMPT "> "
+/*
+*
+*Implement the env built-in, that prints the current environment
+*
+*
+*/
 
 int main(int __attribute__((unused)) argc,  __attribute__((unused)) char *argv[], char *envp[])
 {
