@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <shell.h>
 
-#define MAX_COMMAND_LENGTH 1024
-#define PROMPT "> "
+/*
+*
+*handle arguments for the built-in exit
+*Usage: exit status, where status is an integer used to exit the shell
+*
+*/
+
 
 int main(int argc __attribute__((unused)), char *argv[] __attribute__((unused)), char *envp[])
 {
