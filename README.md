@@ -28,8 +28,8 @@ You will not be able to meet the objectives of this or any following project by 
 You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-# Requirements
-## General
+ Requirements
+ General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All your files should end with a new line
